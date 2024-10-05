@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style1.css" />
+    <title>Megrendelés</title>
+  </head>
+  <body>
+    
+    
+    <div id="content">
+      <div>
+        <h1>Megrendelés</h1>
+      </div>
+
+      
+      <div>
+        <form id="orderForm" method="POST">
+        <h2>Számlázási cím</h2>
+        <label for="name">Név:</label>
+        <input type="text" name="name" required />
+        <br>
+        <label for="billingCountry">Ország:</label>
+        <input type="text" name="billingCountry" required />
+        <br>
+        <label for="billingPostalCode">Irányítószám:</label>
+        <input type="number" name="billingPostalCode" required />
+        <br>
+        <label for="billingCity">Város:</label>
+        <input type="text" name="billingCity" required />
+        <br>
+        <label for="billingStreet">Utca:</label>
+        <input type="text" name="billingStreet" required />
+        <br>
+        <label for="billingHouseNumber">Házszám:</label>
+        <input type="number" name="billingHouseNumber" required />
+      </div>
+
+      
+      <div>
+        <h2>Szállítási cím</h2>
+        <label for="shippingCountry">Ország:</label>
+        <input type="text" name="shippingCountry" required />
+        <br>
+        <label for="shippingPostalCode">Irányítószám:</label>
+        <input type="number" name="shippingPostalCode" required />
+        <br>
+        <label for="shippingCity">Város:</label>
+        <input type="text" name="shippingCity" required />
+        <br>
+        <label for="shippingStreet">Utca:</label>
+        <input type="text" name="shippingStreet" required />
+        <br>
+        <label for="shippingHouseNumber">Házszám:</label>
+        <input type="number" name="shippingHouseNumber" required />
+        <br>
+        <label for="couponCode">Kuponkód (opcionális):</label>
+        <input type="text" name="couponCode" />
+      </div>
+      
+      
+      <div>
+        <h2>Fizetési adatok</h2>
+        <label for="cardNumber">Bankkártya szám:</label>
+        <input type="text" name="paymentCardNumber" required />
+        <br>
+        <label for="paymentExpirationDate">Lejárati dátum (HH/ÉÉ):</label>
+        <input type="text" name="paymentExpirationDate" required />
+        <br>
+        <label for="securityCode">Biztonsági kód:</label>
+        <input type="text" name="securityCode" required />
+      </div>
+      <br>
+      <button type="submit">Rendelés küldése</button>
+    </div>
+    </form>
+  </body>
+</html>
